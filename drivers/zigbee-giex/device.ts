@@ -103,14 +103,16 @@ class MyDevice extends ZigBeeDevice {
         } else {
           // we don't choose it
           this.setCapabilityValue("giex_irrigation_end", moment().format("LTS"));
-        }
+        }        
         break;
 
       case GixDataPoints.LastIrrigationDuration:
         this.log("LastIrrigationDuration", value);
 
         const duration = moment.duration(value as string);
-        this.setCapabilityValue("giex_irrigation_duration", duration.asMinutes());
+
+        let seconds = duration.asSeconds();
+        this.setCapabilityValue("giex_irrigation_duration", Math.ceil(seconds / 60));
         break;
 
       case GixDataPoints.Battery:

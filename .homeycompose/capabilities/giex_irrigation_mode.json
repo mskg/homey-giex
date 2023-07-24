@@ -5,7 +5,7 @@
     "type" : "enum",
     "uiComponent": "picker",
     "values" : [
-        {"id": "0", "title":{"en":"Capacity"}},
-        {"id": "1", "title":{"en":"Duration"}}
+        {"id": "1", "title":{"en":"Capacity"}},
+        {"id": "0", "title":{"en":"Duration"}}
     ]
 }

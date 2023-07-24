@@ -117,13 +117,13 @@
       "uiComponent": "picker",
       "values": [
         {
-          "id": "0",
+          "id": "1",
           "title": {
             "en": "Capacity"
           }
         },
         {
-          "id": "1",
+          "id": "0",
           "title": {
             "en": "Duration"
           }
