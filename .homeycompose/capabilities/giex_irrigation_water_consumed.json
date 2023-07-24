@@ -1,0 +1,9 @@
+{
+    "type": "number",
+    "title": { "en": "Water consumed" },
+    "uiComponent": "sensor",
+    "getable": true,
+    "setable": false,
+    "unit": "l"
+  }
+  

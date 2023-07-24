@@ -1,0 +1,52 @@
+{
+  "name": {
+    "en": "Tuya Zigbee Irrigation Valve"
+  },
+  "class": "other",
+  "capabilities": [
+    "onoff",
+    "giex_irrigation_duration",
+    "giex_irrigation_start",
+    "giex_irrigation_end",
+    "giex_irrigation_target",
+    "giex_irrigation_water_consumed",
+    "giex_irrigation_mode",
+    "measure_battery"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "settings": [
+    {
+      "id": "target",
+      "type": "number",
+      "label": {
+        "en": "Irrigation Target (s/l)"
+      },
+      "value": 600,
+      "min": 0,
+      "max": 3600
+    }
+  ],
+  "zigbee": {
+    "manufacturerName": [
+      "_TZE200_a7sghmms"
+    ],
+    "productId": [
+      "TS0601"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [0, 10, 61184]
+      }
+    }
+  }
+}

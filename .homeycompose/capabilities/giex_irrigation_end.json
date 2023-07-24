@@ -1,0 +1,8 @@
+{
+    "type": "string",
+    "title": { "en": "Irrigation end time" },
+    "uiComponent": "sensor",
+    "getable": true,
+    "setable": false
+  }
+  

@@ -1,0 +1,9 @@
+{
+    "type": "number",
+    "title": { "en": "Last irrigation duration" },
+    "uiComponent": "sensor",
+    "getable": true,
+    "setable": false,
+    "unit": "m"
+  }
+  

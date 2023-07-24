@@ -1,0 +1,166 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "app.mskg.homey-giex",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "homey-giex"
+  },
+  "description": {
+    "en": "Adds support for MyBrand devices."
+  },
+  "category": [
+    "climate"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Markus Kling",
+    "email": "markus.kling@gmail.com"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Tuya Zigbee Irrigation Valve"
+      },
+      "class": "other",
+      "capabilities": [
+        "onoff",
+        "giex_irrigation_duration",
+        "giex_irrigation_start",
+        "giex_irrigation_end",
+        "giex_irrigation_target",
+        "giex_irrigation_water_consumed",
+        "giex_irrigation_mode",
+        "measure_battery"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "small": "/drivers/zigbee-giex/assets/images/small.png",
+        "large": "/drivers/zigbee-giex/assets/images/large.png",
+        "xlarge": "/drivers/zigbee-giex/assets/images/xlarge.png"
+      },
+      "settings": [
+        {
+          "id": "target",
+          "type": "number",
+          "label": {
+            "en": "Irrigation Target (s/l)"
+          },
+          "value": 600,
+          "min": 0,
+          "max": 3600
+        }
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "_TZE200_a7sghmms"
+        ],
+        "productId": [
+          "TS0601"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              10,
+              61184
+            ]
+          }
+        }
+      },
+      "id": "zigbee-giex"
+    }
+  ],
+  "capabilities": {
+    "giex_irrigation_duration": {
+      "type": "number",
+      "title": {
+        "en": "Last irrigation duration"
+      },
+      "uiComponent": "sensor",
+      "getable": true,
+      "setable": false,
+      "unit": "m"
+    },
+    "giex_irrigation_end": {
+      "type": "string",
+      "title": {
+        "en": "Irrigation end time"
+      },
+      "uiComponent": "sensor",
+      "getable": true,
+      "setable": false
+    },
+    "giex_irrigation_mode": {
+      "title": {
+        "en": "Mode"
+      },
+      "getable": true,
+      "setable": true,
+      "type": "enum",
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Capacity"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Duration"
+          }
+        }
+      ]
+    },
+    "giex_irrigation_start": {
+      "type": "string",
+      "title": {
+        "en": "Irrigation start time"
+      },
+      "uiComponent": "sensor",
+      "getable": true,
+      "setable": false
+    },
+    "giex_irrigation_target": {
+      "type": "number",
+      "title": {
+        "en": "Irrigation Target"
+      },
+      "uiComponent": "sensor",
+      "decimals": 0,
+      "min": 0,
+      "max": 3600,
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "s/l"
+      }
+    },
+    "giex_irrigation_water_consumed": {
+      "type": "number",
+      "title": {
+        "en": "Water consumed"
+      },
+      "uiComponent": "sensor",
+      "getable": true,
+      "setable": false,
+      "unit": "l"
+    }
+  }
+}
