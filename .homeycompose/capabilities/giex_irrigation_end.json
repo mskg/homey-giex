@@ -3,6 +3,7 @@
     "title": { "en": "Irrigation end time" },
     "uiComponent": "sensor",
     "getable": true,
-    "setable": false
+    "setable": false,
+    "icon": "/assets/pause.svg"
   }
   

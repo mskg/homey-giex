@@ -94,7 +94,8 @@
       "uiComponent": "sensor",
       "getable": true,
       "setable": false,
-      "unit": "m"
+      "unit": "m",
+      "icon": "/assets/duration.svg"
     },
     "giex_irrigation_end": {
       "type": "string",
@@ -103,7 +104,8 @@
       },
       "uiComponent": "sensor",
       "getable": true,
-      "setable": false
+      "setable": false,
+      "icon": "/assets/pause.svg"
     },
     "giex_irrigation_mode": {
       "title": {
@@ -135,7 +137,8 @@
       },
       "uiComponent": "sensor",
       "getable": true,
-      "setable": false
+      "setable": false,
+      "icon": "/assets/play.svg"
     },
     "giex_irrigation_target": {
       "type": "number",
@@ -150,7 +153,8 @@
       "setable": false,
       "units": {
         "en": "s/l"
-      }
+      },
+      "icon": "/assets/setting.svg"
     },
     "giex_irrigation_water_consumed": {
       "type": "number",
@@ -160,7 +164,8 @@
       "uiComponent": "sensor",
       "getable": true,
       "setable": false,
-      "unit": "l"
+      "unit": "l",
+      "icon": "/assets/amount.svg"
     }
   }
 }

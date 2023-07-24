@@ -4,6 +4,7 @@
     "uiComponent": "sensor",
     "getable": true,
     "setable": false,
-    "unit": "l"
+    "unit": "l",
+    "icon": "/assets/amount.svg"
   }
   

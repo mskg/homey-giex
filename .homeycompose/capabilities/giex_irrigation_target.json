@@ -7,6 +7,7 @@
     "max": 3600,
     "getable": true,
     "setable": false,
-    "units": { "en": "s/l" }
+    "units": { "en": "s/l" },
+    "icon": "/assets/setting.svg"
   }
   
